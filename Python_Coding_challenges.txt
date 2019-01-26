@@ -1,0 +1,113 @@
+﻿numero = input("Enter a number:")
+numero = int(numero)
+if numero % 2 == 0:
+    print("numero is a even number!")
+else:
+    print("numero is an odd number!")
+
+------
+
+lists = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+import copy
+
+list_copy = copy.copy(lists)
+def only_evens(list_copy):
+    for l in list_copy:
+        for i in l:
+            if i % 2 != 0:
+                list_copy.remove(l)
+                break
+    return(list_copy) 
+    print(list_copy) 
+
+-----
+
+def get_largest_number(list1=[1, 2, 8, 6, 19, 68, 34, 12, 10, 3]):
+    """return largest number."""
+    max_index = 0
+    index = 0
+    max_num = list1[0]
+
+    for i in list1:
+        if i > max_num:
+            max_num = i
+            max_index = index
+        index += 1     
+    return(max_num)
+
+----
+
+word = input("enter a string") 
+def is_palindrome(word):
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+
+if True
+    print("Bravo" + word + "is a palindrome.")
+else
+    print("Sorry" + word + "is no palindrome.")
+
+-----
+
+def fibonacci():
+    num = int(input("How many numbers that generates?:"))
+    i = 1
+    if num == 0:
+        fib = []
+    elif num == 1:
+        fib = [1]
+    elif num == 2:
+        fib = [1,1]
+    elif num > 2:
+        fib = [1,1]
+        while i < (num - 1):
+            fib.append(fib[i] + fib[i-1])
+            i += 1
+    return fib
+print(fibonacci())
+input()
+
+-----
+
+numero = input("Enter a number:")
+numero = int(numero)
+squarenbr = numero ** 2
+print(squarenbr)
+
+----
+
+l = [15, 18, 2, 36, 12, 78, 5, 6, 9]
+sum(l) / float(len(l))
+
+-----
+
+characters = input("enter a string of characters") 
+def vowel_count(characters):
+    """
+    Count the number of vowels in the string 'characters' and return as an integer
+    """
+    count = 0
+    for char in characters:
+        if char.lower() in list("aeiou"):
+            count += 1
+    return(count)
+
+-----
+
+
+fahrenheit = input(""Please input a temperature in Fahrenheit") 
+fahrenheit = float(fahrenheit)
+
+//Function to change temperature
+float temp_change(float fahrenheit) {
+    float centigrade;
+    centigrade = 5 * (fahrenheit - 32) / 9; //Changing the temperature
+    print("The temperature in centigrade: " + centigrade;
+}
+
+
+
+
+
